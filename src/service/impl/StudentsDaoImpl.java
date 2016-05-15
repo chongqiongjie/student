@@ -132,7 +132,7 @@ public class StudentsDaoImpl implements StudentsDao {
 				temp = String.valueOf(i);
 				int len = temp.length();
 				//´Õ¹»ÆßÎ»
-				for(int j=0;j<7;j++){
+				for(int j=0;j<7-len;j++){
 					temp="0"+temp;
 				}
 				sid = "s"+temp;

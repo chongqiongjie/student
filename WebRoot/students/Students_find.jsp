@@ -84,11 +84,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<span><img src="../images/arror.gif" width="7" height="11" border="0" alt=""></span>&nbsp;<a href="<%=path%>/students/Students_query.action">学生列表</a><span>&nbsp;
 	</div>
 </div>
+
 <body>
 	<div><input name="text" type="text"  value="根据学生姓名查找"  onfocus="if (value =='根据学生编号查找'){value =''}"
 	onblur="if (value ==''){value='根据学生姓名查找'}"/></div>
 	<div class="button" onmouseout="this.style.backgroundColor='';this.style.fontWeight='normal'" onmouseover="this.style.backgroundColor='#77D1F6';this.style.fontWeight='bold'">
-			<a href="<%=path%>/students/Students_queryBySname.action">查找学生</a>
+			<a href="<%=path%>/students/Students_queryBySname.action?sname='<s:property value="#session.queryBySname_students.sname"/>'">查找学生</a>
 		</div>
 </body>
+
 </html>

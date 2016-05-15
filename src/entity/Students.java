@@ -6,7 +6,7 @@ import java.util.Date;
 import javax.validation.constraints.NotNull;
 
 public class Students implements Serializable {
-	@NotNull
+
 	private String sid;
 	private String sname;
 	private String gender;
